@@ -1,0 +1,29 @@
+{
+  "title": "Sample Pets API",
+  "description": "A small demo API to show how Try It works",
+  "server": "https://petstore3.swagger.io/api/v3",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/pet/findByStatus",
+      "description": "Find pets by status",
+      "parameters": [
+        { "name": "status", "in": "query", "example": "available" }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/pet",
+      "description": "Add a new pet",
+      "requestExample": { "id": 0, "name": "fluffy", "photoUrls": [], "status": "available" }
+    },
+    {
+      "method": "GET",
+      "path": "/pet/{petId}",
+      "description": "Get pet by id",
+      "parameters": [
+        { "name": "petId", "in": "path", "example": "1" }
+      ]
+    }
+  ]
+}
