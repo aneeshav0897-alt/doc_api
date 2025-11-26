@@ -1,0 +1,20 @@
+{
+  "name": "readme-like-api-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-docs": "node scripts/generate_docs.js api-spec.json docs/api-docs.md"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
